@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+  display: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-navbar {
+  display: wrap;
+  font-size: 30px;
+  text-align: left;
+}
+
+.content {
+    background-color: #303030;
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    justify-content:center; 
+}
+
+.navbar{
+    background-color:#000066;
+    padding: 5px;
+    flex: 100%;
+}
+
+
+.heading {
+     color: white;
+     text-align: center;
+     font-size: 50px;
+     font-family: "Lucida Console", "Courier New", monospace;
+     padding-top: 70px;
+     padding-bottom: 20px;
+}
+
+.para {
+     color: white;
+     text-align: center;
+     font-size: 20px;
+     font-family: "Lucida Console", monospace;
+     padding-top: 30px;
+     padding-bottom: 70px;
+}
+
+.para2 {
+     color: white;
+     text-align: center;
+     font-size: 20px;
+     font-family: "Lucida Console", monospace;
+     padding-bottom: 100px;
+}
+
+.button {
+  background-color:#22316C	;
+  border: none;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.mid{
+    background-color: #C8C8C8;
+    padding: 80px;
+    flex: 100%;
+}
+
+.columns
+{
+  column-count: 2;
+  font-size: 20px;
+  color: white;
+  font-family: "Lucida Console", monospace;
+  padding-bottom: 5px;
+}
+
+.c1 {
+    background-color:#F5F5F5;
+    padding: 50px;
+    width: 5px;
+    flex: 25%;
+    margin: 30px;
+    line-height: 300px;
+}
+
+
+
+.handle {
+    background-color: #C8C8C8 ;
+    padding: 70px;
+    flex: 100%;
+}
+
+.c2 {
+    background-color:dodgerblue;
+    padding top: 200px;
+    flex: 50%;
+    line-height: 200px;
+}
+
+.c3 {
+    background-color:#080808;
+    padding top: 200px;
+    flex: 50%;
+    line-height: 200px;
+}
+
+.c4 {
+    background-color: #505050;
+    flex: 50%;
+    line-height: 80px;
+}
+
+.c5 {
+    background-color: #505050;
+    flex: 50%;
+    line-height: 80px;
+}
+
+.material-icons {vertical-align:-14%}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  background-color: white;
+}
+
+.fa {
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+  
+  .c1 {
+      flex: 100%;
+  }
+  .flex-navbar{
+    flex: 100%;
+  }
+
+}
+
+</style>
+
+<body>
+<div class="flex-navbar">
+<div class="navbar">
+<pre><div class="w3-ul" style="color:white"><a href= "/"><i class="material-icons">home</i>Home</a>                                                                    <a href="#contact">Logout</a></div></pre>
+</div></div>
+
+<div class="flex-container">
+  
+  <div style="background-image :url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIYiNjBuJRO1zgT0k26tFsJmA5Crmiv-WQxw&usqp=CAU');">
+  <div class="heading">
+  <strong>User Dashboard</strong><br>
+  </div>
+   <div class="para2"><a href="#contact" class="button">Read More</a></div>
+  </div>
+
+{% for detail in details %}
+
+<div class="content" id="contact">
+  <div class="c2">
+  <div style="color: white; text-align: center; font-size: 30px; font-family: Lucida Console, Courier New, monospace;"><b>
+  <ul>
+  <li>Name: {{detail.name}}</li>
+  <li>Email:email</li>
+  </ul>
+  </div>
+  </div>
+  
+  <div class="c3">
+  <div style="color: white; text-align: center; font-size: 30px; font-family: Lucida Console, Courier New, monospace;">
+  <ul>
+  <li>DOB: 07-07-2000</li>
+  <li>Phone No: 123456789        (other)</li>
+  </ul>
+  </div>
+  <h6 style ="color: white;"></h6>
+  </div>
+</div>
+{% endfor %}
+<div class="content">
+  <div class="c4" style="color:white;">21-07-2021</div>
+  <div class="c5" style="color:white;">Project By Parul Mogre</div>
+</div>
+
+
+
+
+</body>
+</html>

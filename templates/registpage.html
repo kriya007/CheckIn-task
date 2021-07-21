@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<style>
+.heading {
+     background-color: black;
+     color: white;
+     padding: 20px;
+     text-align: center;
+     font-size: 20px;
+     font-family: "Lucida Console", "Courier New", monospace;
+     border-radius: 25px;
+}
+
+.back{
+     background-color:lightgrey;
+}
+
+.para {
+     font-family: courier;
+}
+
+.p2{
+     font-size:120%;
+     background-color: black;
+     font-family: "Lucida Console", "Courier New", monospace;
+     color: white;
+     padding: 10px;
+     opacity: 0.6;
+     border-radius: 25px;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: red;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px
+}
+
+th{ background-color: white;
+opacity: 0.8}
+
+td{ background-color: lightblue;
+opacity: 0.8}
+
+img {
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  background-color: black;
+  height: 250px;
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+  opacity: 0.6;
+  border-radius: 25px;
+}
+
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+</style>
+
+
+<body class="back">
+<h3 class="heading">Home Page</h3>
+<br>
+
+
+<center>
+<div class="box">
+
+<form action = "#" method ="post">{% csrf_token %}
+<p style="font-family: Lucida Console; color:#556B2F;"><b>Email-id</b></p>
+<input type="email" id="email" name="email" placeholder="Email" required>
+<br>
+
+<p style="font-family: Lucida Console; color:#556B2F;"><b>Password</b></p>
+<input type="password" id="password" name="password" required>
+<br>
+<p></p>
+<input type="submit" class="button" value ="Login"><br>
+
+<button class="button"><a href = "register">Register</a></button>
+
+</form>
+</div>
+</center>
+<br>
+</body>
+<html>
